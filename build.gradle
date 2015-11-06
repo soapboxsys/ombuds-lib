@@ -15,8 +15,9 @@ repositories {
 }
 
 dependencies {
-    compile 'com.google.protobuf:protobuf-java:2.6.1'    
     compile 'org.slf4j:slf4j-api:1.7.12'
+    compile 'com.google.protobuf:protobuf-java:2.6.1'
+    compile 'org.bitcoinj:bitcoinj-core:0.13.3'
 
     testCompile 'junit:junit:4.12'
 }
