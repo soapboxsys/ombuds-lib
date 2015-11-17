@@ -25,7 +25,7 @@ public class Bulletin extends AbstractRecord {
         bltnBuilder.setMessage(msg.get());
         bltnBuilder.setTimestamp(time.get());
 
-        // Non-required Fields
+        // Optional Fields
         if(loc.enabled()) {
             bltnBuilder.setLocation(loc.get());
         }
