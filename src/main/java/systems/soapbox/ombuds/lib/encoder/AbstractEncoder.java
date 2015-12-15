@@ -10,8 +10,6 @@ import java.util.List;
 
 public abstract class AbstractEncoder {
 
-    public static final String OMBPREFIX = "BRETHREN";
-
     public void encode(OmbudsTransaction tx, AbstractRecord record) throws RecordEncodingException {
         tx.clearOutputs();
         for(TransactionOutput out : makeOutputs(tx.getParams(), makeData(record)) ) {
@@ -20,10 +18,10 @@ public abstract class AbstractEncoder {
     }
 
     public ByteString makeData(AbstractRecord record) {
-        ByteString prefix_bytes = ByteString.copyFrom( OMBPREFIX.getBytes() );
+        ByteString header_bytes = OmbudsHeader.make(record);
         ByteString record_bytes = record.toWire().toByteString();
 
-        return prefix_bytes.concat(record_bytes);
+        return header_bytes.concat(record_bytes);
     }
 
     protected abstract List<TransactionOutput> makeOutputs(NetworkParameters params, ByteString data) throws RecordEncodingException;

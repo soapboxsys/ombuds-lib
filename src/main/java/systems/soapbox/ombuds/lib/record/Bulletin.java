@@ -7,6 +7,8 @@ import systems.soapbox.wirerecord.OmbudsWireProtos;
 
 public class Bulletin extends AbstractRecord {
 
+    public static final int BLTN_TYPE = 1;
+
     Message msg;
     Timestamp time;
     Location loc;
@@ -15,6 +17,11 @@ public class Bulletin extends AbstractRecord {
         this.msg = msg;
         this.time = time;
         this.loc = loc;
+    }
+
+    @Override
+    public int getRecordType() {
+        return BLTN_TYPE;
     }
 
     @Override
