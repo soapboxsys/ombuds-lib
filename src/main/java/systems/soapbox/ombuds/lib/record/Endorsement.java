@@ -20,11 +20,11 @@ public class Endorsement extends AbstractRecord {
         return ENDO_TYPE;
     }
 
-    public OmbudsWireProtos.WireEndorsment toWire(){
-        OmbudsWireProtos.WireEndorsment.Builder endorseBuilder = OmbudsWireProtos.WireEndorsment.newBuilder();
+    public OmbudsWireProtos.Endorsement toWire(){
+        OmbudsWireProtos.Endorsement.Builder endorseBuilder = OmbudsWireProtos.Endorsement.newBuilder();
 
         // Required Fields
-        endorseBuilder.setBltnid(bltnId.get());
+        endorseBuilder.setBid(bltnId.get());
         endorseBuilder.setTimestamp(time.get());
 
         return endorseBuilder.build();

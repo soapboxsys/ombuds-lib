@@ -25,8 +25,8 @@ public class Bulletin extends AbstractRecord {
     }
 
     @Override
-    public OmbudsWireProtos.WireBulletin toWire() {
-        OmbudsWireProtos.WireBulletin.Builder bltnBuilder = OmbudsWireProtos.WireBulletin.newBuilder();
+    public OmbudsWireProtos.Bulletin toWire() {
+        OmbudsWireProtos.Bulletin.Builder bltnBuilder = OmbudsWireProtos.Bulletin.newBuilder();
 
         // Required Fields
         bltnBuilder.setMessage(msg.get());
