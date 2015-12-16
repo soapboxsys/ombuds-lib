@@ -35,7 +35,7 @@ public class P2PKHFormat extends AbstractFormat {
             outputList.addLast(output);
         }
 
-        return null;
+        return outputList;
     }
 
     private List<byte[]> buildChunkList(ByteString data){
