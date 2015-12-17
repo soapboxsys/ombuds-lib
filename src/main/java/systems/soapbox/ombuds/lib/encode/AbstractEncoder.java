@@ -18,7 +18,7 @@ public abstract class AbstractEncoder {
         }
     }
 
-    public ByteString makeData(AbstractRecord record) {
+    protected ByteString makeData(AbstractRecord record) {
         ByteString header_bytes = OmbudsHeader.make(record);
         ByteString record_bytes = record.toWire().toByteString();
 

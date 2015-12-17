@@ -17,8 +17,8 @@ public class P2PKHFormat extends AbstractFormat {
 
     @Override
     protected void precheck(ByteString data) throws RecordEncodingException {
-        if(data.size() > STANDARD_MAX_SIZE)
-            throw new RecordEncodingException("data.size() > 100,000 bytes.");
+        if(data.size() > MAX_SIZE)
+            throw new RecordEncodingException("data.size() > " + MAX_SIZE);
     }
 
     @Override

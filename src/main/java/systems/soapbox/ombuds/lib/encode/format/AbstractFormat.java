@@ -22,7 +22,7 @@ public abstract class AbstractFormat {
     public static final long DUST = 546;            // TODO finalize omb amount
     public static final int OP_RETURN_SIZE = 80;
     public static final int ADDR_LEN = 20;
-    public static final int STANDARD_MAX_SIZE = 100000;
+    public static final int MAX_SIZE = 75000;
 
     protected abstract void precheck(ByteString data) throws RecordEncodingException;
     protected abstract List<TransactionOutput> make(NetworkParameters params, ByteString data);
