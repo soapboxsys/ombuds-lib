@@ -3,8 +3,8 @@ package systems.soapbox.ombuds.lib;
 import org.bitcoinj.core.NetworkParameters;
 import org.bitcoinj.core.Transaction;
 import org.bitcoinj.core.Wallet;
-import systems.soapbox.ombuds.lib.encoder.AbstractEncoder;
-import systems.soapbox.ombuds.lib.encoder.RecordEncodingException;
+import systems.soapbox.ombuds.lib.encode.AbstractEncoder;
+import systems.soapbox.ombuds.lib.encode.RecordEncodingException;
 import systems.soapbox.ombuds.lib.record.AbstractRecord;
 
 public class OmbudsTransaction extends Transaction {

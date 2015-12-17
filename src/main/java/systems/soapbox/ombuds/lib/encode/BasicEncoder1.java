@@ -1,10 +1,10 @@
-package systems.soapbox.ombuds.lib.encoder;
+package systems.soapbox.ombuds.lib.encode;
 
 import com.google.protobuf.ByteString;
 import org.bitcoinj.core.NetworkParameters;
 import org.bitcoinj.core.TransactionOutput;
-import systems.soapbox.ombuds.lib.encoder.format.NullDataFormat;
-import systems.soapbox.ombuds.lib.encoder.format.P2PKHFormat;
+import systems.soapbox.ombuds.lib.encode.format.NullDataFormat;
+import systems.soapbox.ombuds.lib.encode.format.P2PKHFormat;
 
 import java.util.List;
 

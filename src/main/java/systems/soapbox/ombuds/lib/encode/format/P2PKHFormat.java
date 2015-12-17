@@ -1,4 +1,4 @@
-package systems.soapbox.ombuds.lib.encoder.format;
+package systems.soapbox.ombuds.lib.encode.format;
 
 import com.google.protobuf.ByteString;
 import org.bitcoin.protocols.payments.Protos;
@@ -8,7 +8,7 @@ import org.bitcoinj.core.NetworkParameters;
 import org.bitcoinj.core.TransactionOutput;
 import org.bitcoinj.script.Script;
 import org.bitcoinj.script.ScriptBuilder;
-import systems.soapbox.ombuds.lib.encoder.RecordEncodingException;
+import systems.soapbox.ombuds.lib.encode.RecordEncodingException;
 
 import java.util.LinkedList;
 import java.util.List;

@@ -1,4 +1,4 @@
-package systems.soapbox.ombuds.lib.encoder;
+package systems.soapbox.ombuds.lib.encode;
 
 public class RecordEncodingException extends Exception {
 

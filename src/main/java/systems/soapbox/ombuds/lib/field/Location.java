@@ -42,4 +42,16 @@ public class Location extends AbstractOptionalField {
 
         return locBuilder.build();
     }
+
+    public Double getLat() {
+        return lat;
+    }
+
+    public Double getLon() {
+        return lon;
+    }
+
+    public Double getH() {
+        return h;
+    }
 }

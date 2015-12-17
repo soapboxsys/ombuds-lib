@@ -1,4 +1,4 @@
-package systems.soapbox.ombuds.lib.encoder;
+package systems.soapbox.ombuds.lib;
 
 import com.google.protobuf.ByteString;
 import org.bitcoinj.core.VarInt;
@@ -13,7 +13,7 @@ public class OmbudsHeader {
         ByteString flag_bytes = ByteString.copyFromUtf8(OMBFLAG);
         ByteString type_bytes = ByteString.copyFrom( Utils.intToByte8(record.getRecordType()) );
 
-        VarInt length = new VarInt( record.toWire().toByteString().size() + 1 );
+        VarInt length = new VarInt( record.toWire().toByteString().size() );
         ByteString len_bytes = ByteString.copyFrom(length.encode());
 
         return flag_bytes.concat( type_bytes.concat(len_bytes) );

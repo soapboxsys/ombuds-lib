@@ -1,8 +1,9 @@
-package systems.soapbox.ombuds.lib.encoder;
+package systems.soapbox.ombuds.lib.encode;
 
 import com.google.protobuf.ByteString;
 import org.bitcoinj.core.NetworkParameters;
 import org.bitcoinj.core.TransactionOutput;
+import systems.soapbox.ombuds.lib.OmbudsHeader;
 import systems.soapbox.ombuds.lib.OmbudsTransaction;
 import systems.soapbox.ombuds.lib.record.AbstractRecord;
 
